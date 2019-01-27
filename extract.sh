@@ -11,3 +11,12 @@ git pull --recurse-submodules
 
 # Install vim plugins
 vim +PluginInstall +qall
+
+# make sure cmake is installed
+if [ ! -x /usr/bin/cmake ]; then
+  sudo apt-get install cmake
+fi
+
+# Build YCM with C support
+pushd ~/.vim/bundle/YouCompleteMe/
+./install.py --all

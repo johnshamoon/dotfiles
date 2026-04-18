@@ -19,7 +19,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-nvim_path = "/usr/local/google/home/johnshamoon/.config/nvim"
+nvim_path = "~/.config/nvim"
 
 package.path = package.path .. ";" .. nvim_path .. "/lua/plugins/private/?.lua"
 

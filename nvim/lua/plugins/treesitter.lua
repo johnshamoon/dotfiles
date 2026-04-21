@@ -10,7 +10,6 @@ return {
           "fidl",
           "gn",
           "json5",
-          "lua",
           "c",
           "cpp",
           "rust",
